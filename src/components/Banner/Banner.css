@@ -1,0 +1,29 @@
+.banner {
+    width: 100%;
+    background-color: #A6907C;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem {
+    width: 60%;
+}
+
+@media screen and (min-width: 590px) {
+    .imagem {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 910px){
+    .imagem {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .imagem {
+        width: 20%;
+    }
+}
+    

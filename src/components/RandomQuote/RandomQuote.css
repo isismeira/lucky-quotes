@@ -1,24 +1,44 @@
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #A6907C;
 }
 
 .quote-box{
     text-align: center;
-    background-color: #fff;
+    background-color: #D9CBBF;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 200px;
+    max-height: fit-content;
 }
 
 .quote{
-    font-size: 24px;
+    font-size: 20px;
     font-style: italic;
     margin-bottom: 10px;
+}
+
+@media screen and (min-width: 590px) {
+    .quote-box{
+        max-width: 400px;
+    }
+    .quote{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .quote-box {
+        max-width: 600px;
+    }
+    .quote{
+        font-size: 24px;
+    }
 }
 
 .author{
@@ -29,9 +49,13 @@
 
 .button{
     color: white;
-    background-color: blue;
+    background-color: #8C4E2A;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.button:hover {
+    background-color: #8c4e2ab9;
 }

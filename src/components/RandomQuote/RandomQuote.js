@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './RandomQuote.css'
+import Banner from '../Banner/Banner';
+
 
 const RandomQuote = () => {
   const [quote, setQuote] = useState('');
@@ -26,10 +28,11 @@ const RandomQuote = () => {
 
   return (
     <div className='container'>
+      <Banner />
       <div className='quote-box'>
         <p className='quote'>"{quote}"</p>
         <p className='author'>- {author}</p>
-        <button onClick={handleNewQuote} className='button'>Nova Citação</button>
+        <button onClick={handleNewQuote} className='button'>New Quote</button>
       </div>
     </div>
   );
