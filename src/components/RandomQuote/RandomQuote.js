@@ -14,7 +14,7 @@ const RandomQuote = () => {
       setQuote(response.data.content);
       setAuthor(response.data.author);
     } catch (error) {
-      console.error('Erro ao buscar citação:', error);
+      console.error('Error:', error);
     }
   };
 
